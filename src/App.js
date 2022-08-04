@@ -1,9 +1,9 @@
-
+import SignUpSignIn from './components/signUp_signIn/SignUpSignIn';
 import './App.css';
 
 function App() {
   return (
-    <h1>hello</h1>
+    <SignUpSignIn />
   );
 }
 

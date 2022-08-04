@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Nunito", sans-serif;
+}
+
+/* button style define */
+.btn {
+  width: 150px;
+  background-color: #4fb2e9;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: transparent;
+}
+
+.btn:hover {
+  background-color: #4fb3e9c7;
+  color: rgba(0, 0, 0, 0.65);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
