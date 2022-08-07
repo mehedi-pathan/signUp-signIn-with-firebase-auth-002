@@ -6,7 +6,7 @@
   overflow: hidden;
 
   @media (max-width: 870px) {
-    min-height: 800px;
+    min-height: 740px;
     height: 100vh;
   }
   @media (max-width: 570px) {
@@ -200,8 +200,13 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 2.5rem 8%;
+        padding: 2.5rem 8% !important;
         grid-column: 1 / 2;
+      }
+
+      img {
+        max-width: 450px;
+        height: auto;
       }
 
       .content {
@@ -239,18 +244,18 @@
       h3 {
         font-weight: 600;
         line-height: 1;
-        font-size: 1.5rem;
+        font-size: 24px;
         @media (max-width: 870px) {
-          font-size: 1.2rem;
+          font-size: 22px;
         }
       }
       p {
-        font-size: 0.95rem;
-        padding: 0.7rem 0;
+        font-size: 17px;
+        padding: 19px 0;
 
         @media (max-width: 870px) {
-          font-size: 0.7rem;
-          padding: 0.5rem 0;
+          font-size: 14px !important;
+          padding: 16px 0;
         }
       }
     }
@@ -308,61 +313,60 @@
 }
 //ANIMATION define start
 .sign_up_mode {
-  form {
-    .sign_up_form {
-      opacity: 1;
-      z-index: 2;
-    }
-    .sign_in_form {
-      opacity: 0;
-      z-index: 1;
-    }
+  .sign_up_form {
+    opacity: 1 !important;
+    z-index: 2 !important;
   }
+  .sign_in_form {
+    opacity: 0 !important;
+    z-index: 1 !important;
+  }
+
   .left_panel {
-    pointer-events: none;
+    pointer-events: none !important;
     .image,
     .content {
-      transform: translateX(-800px);
+      transform: translateX(-800px) !important;
       @media (max-width: 870px) {
-        transform: translateY(-300px);
+        transform: translateY(-300px) !important;
       }
     }
   }
   .right_panel {
-    pointer-events: all;
+    pointer-events: all !important;
 
     .image,
     .content {
-      transform: translateX(0%);
+      transform: translateX(0%) !important;
 
       @media (max-width: 870px) {
-        transform: translateY(0px);
+        transform: translateY(0px) !important;
       }
     }
   }
 
   .signin_signup {
-    left: 25%;
+    left: 25% !important;
 
     @media (max-width: 870px) {
-      left: 50%;
-      top: 5%;
-      transform: translate(-50%, 0);
+      left: 50% !important;
+      top: 5% !important;
+      transform: translate(-50%, 0) !important;
     }
   }
 
   &::before {
-    transform: translate(100%, -50%);
-    right: 52%;
+    transform: translate(100%, -50%) !important;
+    right: 52% !important;
 
     @media (max-width: 870px) {
-      transform: translate(-50%, 100%);
-      bottom: 32%;
-      right: initial;
+      transform: translate(-50%, 100%) !important;
+      bottom: 32% !important;
+      right: initial !important;
     }
-    @media (max-width: 870px) {
-      bottom: 28%;
-      left: 50%;
+    @media (max-width: 576px) {
+      bottom: 28% !important;
+      left: 50% !important;
     }
   }
 }

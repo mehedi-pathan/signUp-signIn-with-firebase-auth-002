@@ -16,7 +16,6 @@ const SignUpSignIn = () => {
 
   const handleClick = () => {
     isActive ? setIsActive(false) : setIsActive(true);
-    console.log(isActive);
   };
 
   return (
