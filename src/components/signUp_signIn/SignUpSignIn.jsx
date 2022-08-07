@@ -108,12 +108,16 @@ const SignUpSignIn = () => {
       <div className="panels_container">
         <div className="panel left_panel">
           <div className="content">
-            <h3>New here ?</h3>
-            <p>
+            <h3 data-aos="fade-right" data-aos-dealay="400">
+              New here ?
+            </h3>
+            <p data-aos="fade-right" data-aos-dealay="500">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
             </p>
             <button
+              data-aos="fade-right"
+              data-aos-dealay="600"
               className="btn transparent"
               id="sign_up_btn"
               onClick={handleClick}
@@ -121,16 +125,26 @@ const SignUpSignIn = () => {
               Sign up
             </button>
           </div>
-          <img src={LogImg} className="image" alt="" />
+          <img
+            data-aos="zoom-in"
+            data-aos-dealay="700"
+            src={LogImg}
+            className="image"
+            alt=""
+          />
         </div>
         <div className="panel right_panel">
           <div className="content">
-            <h3>One of us ?</h3>
-            <p>
+            <h3 data-aos="fade-left" data-aos-delay="400">
+              One of us ?
+            </h3>
+            <p data-aos="fade-left" data-aos-delay="500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               laboriosam ad deleniti.
             </p>
             <button
+              data-aos="fade-left"
+              data-aos-delay="600"
               className="btn transparent"
               id="sign_in_btn"
               onClick={handleClick}
@@ -138,7 +152,13 @@ const SignUpSignIn = () => {
               Sign in
             </button>
           </div>
-          <img src={RegisterImg} className="image" alt="" />
+          <img
+            data-aos="zoom-in"
+            data-aos-dealay="700"
+            src={RegisterImg}
+            className="image"
+            alt=""
+          />
         </div>
       </div>
     </div>
